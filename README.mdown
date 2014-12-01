@@ -1,0 +1,30 @@
+# Format-amd
+
+_Format-amd string/number library_
+
+Format converts string from and to number using [amd](http://en.wikipedia.org/wiki/Asynchronous_module_definition) structure. Currently, we support currency formats.
+
+## Install
+
+Install with [Bower](http://bower.io): `bower install format-amd`
+
+## Dependency
+
+Format-amd depends on an [amd](http://en.wikipedia.org/wiki/Asynchronous_module_definition) implementation. We suggest [async-define](https://gist.github.com/sergiolopes/5778124) implementation for dependency lookup.
+
+## Example
+
+``` js
+require(['format'], function(format) {
+	format.currency(17.2, 'R$'); // Returns R$ 17,20
+	format.currencyToNumber('R$ 9,50'); // Returns 9.5
+});
+```
+
+## License
+
+Format-amd is released under the [BSD](http://github.com/elo7/format/blob/master/license.txt). Have at it.
+
+* * *
+
+Copyright :copyright: 2014 Elo7
