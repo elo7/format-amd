@@ -23,7 +23,7 @@ require(['format'], function(format) {
 
 ## License
 
-Format-amd is released under the [BSD](http://github.com/elo7/format/blob/master/license.txt). Have at it.
+Format-amd is released under the [BSD](https://github.com/elo7/format-amd/blob/master/LICENSE). Have at it.
 
 * * *
 
