@@ -12,7 +12,7 @@
     "Elo7"
   ],
   "license": "BSD",
-  "homepage": "https://github.com/elo7/formatter",
+  "homepage": "https://github.com/elo7/format-amd",
   "ignore": [
     "**/.*",
     "node_modules",
