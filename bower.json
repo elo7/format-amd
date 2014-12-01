@@ -1,0 +1,23 @@
+{
+  "name": "Format",
+  "version": "1.0.0",
+  "description": "A small lib to format string to number and vice versa",
+  "main": "format.js",
+  "keywords": [
+    "JS",
+    "Formatter",
+    "Currency"
+  ],
+  "authors": [
+    "Elo7"
+  ],
+  "license": "BSD",
+  "homepage": "https://github.com/elo7/formatter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
