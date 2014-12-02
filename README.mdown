@@ -2,7 +2,7 @@
 
 _Format-amd string/number library_
 
-Format converts string from and to number using [amd](http://en.wikipedia.org/wiki/Asynchronous_module_definition) structure. Currently, we support currency formats.
+Format.js is a library that converts string to number or the opposite. This library uses [amd](http://en.wikipedia.org/wiki/Asynchronous_module_definition) structure. Currently, we support currency formats.
 
 ## Install
 
