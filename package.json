@@ -5,7 +5,8 @@
   "main": "format.js",
   "scripts": {
     "build": "npm install",
-    "test": "mocha test --recursive --reporter nyan"
+    "test": "mocha test --recursive --reporter nyan",
+    "postinstall": "bower install"
   },
   "keywords": [
     "JS",

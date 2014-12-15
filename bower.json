@@ -20,7 +20,7 @@
     "test",
     "tests"
   ],
-  "dev-dependencies": {
+  "devDependencies": {
     "async-define": "elo7/async-define"
   }
 }
