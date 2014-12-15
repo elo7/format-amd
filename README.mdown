@@ -19,7 +19,7 @@ Format-amd depends on an [amd](http://en.wikipedia.org/wiki/Asynchronous_module_
 ## Example
 
 ``` js
-require(['format'], function(format) {
+define(['format'], function(format) {
 	format.currency(17.2, 'R$'); // Returns R$ 17,20
 	format.currencyToNumber('R$ 9,50'); // Returns 9.5
 });
