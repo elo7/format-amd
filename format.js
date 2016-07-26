@@ -37,7 +37,7 @@ define('format', [], function() {
 
 				return sign + prefix + interger + decimal;
 			}
-			return;
+			return '';
 		},
 		'currencyToNumber' : function(currency) {
 			var normalized = currency.replace(/[^0-9\,]/g, '').replace(',', '.');
