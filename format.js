@@ -12,7 +12,7 @@ define('format', [], function() {
 
 	return {
 		'currency' : function(floatValue, prefix) {
-			var normalized = floatValue.toString().replace(/[^\d\.,-]/g, '').replace(/,/g, '.').replace(/\.(\d{3})/g, '$1');
+			var normalized = parseFloat(floatValue.toString().replace(/[^\d\.,-]/g, '').replace(/,/g, '.').replace(/\.(\d{3})/g, '$1'));
 			if(!isNaN(normalized)) {
 				var numberParts = normalized.toString().replace('-', '').split('.'),
 					interger = numberParts[0],
