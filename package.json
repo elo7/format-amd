@@ -1,6 +1,6 @@
 {
   "name": "format-amd",
-  "version": "v1.0.2-SNAPSHOT",
+  "version": "v1.0.2",
   "description": "A small lib to format string to number and vice versa",
   "main": "format.js",
   "scripts": {
