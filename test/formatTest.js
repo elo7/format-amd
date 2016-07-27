@@ -42,5 +42,10 @@ define(['format'], function(format) {
 			var currency = format.currency(number, "R$");
 			assert.equal("R$ 1.000,20", currency);
 		});
+		it('should return empty for invalid values', function(){
+			var number = "invalidValue";
+			var currency = format.currency(number, "R$");
+			assert.equal("", currency);
+		});
 	});
 });
