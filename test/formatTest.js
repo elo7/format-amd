@@ -17,23 +17,28 @@ define(['format'], function(format) {
 			var currency = format.currency(number, "R$");
 			assert.equal("R$ 10,50", currency);
 		});
+		it('should return currency for hundred', function(){
+			var number = 100.50;
+			var currency = format.currency(number, "R$");
+			assert.equal("R$ 100,50", currency);
+		});
 		it('should return currency for value over a thousand', function(){
 			var number = 1000.50;
 			var currency = format.currency(number, "R$");
 			assert.equal("R$ 1.000,50", currency);
 		});
-		it('should return currency for value over a thousand', function(){
+		it('should return currency for value over a million', function(){
 			var number = 1234567.89;
 			var currency = format.currency(number, "R$");
 			assert.equal("R$ 1.234.567,89", currency);
 		});
-		it('should return currency for string using dots instead of comma', function(){
-			var number = "10.20";
+		it('should return currency for string using comma', function(){
+			var number = "10,20";
 			var currency = format.currency(number, "R$");
 			assert.equal("R$ 10,20", currency);
 		});
-		it('should return currency for string using comma instead of dots', function(){
-			var number = "10,20";
+		it('should return currency for string using dots instead of comma', function(){
+			var number = "10.20";
 			var currency = format.currency(number, "R$");
 			assert.equal("R$ 10,20", currency);
 		});
