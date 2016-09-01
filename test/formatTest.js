@@ -17,6 +17,16 @@ define(['format'], function(format) {
 			var currency = format.currency(number, "R$");
 			assert.equal("R$ 10,50", currency);
 		});
+		it('should return currency for float number with more than two decimal places', function(){
+			var number = 123.456789;
+			var currency = format.currency(number, "R$");
+			assert.equal("R$ 123,45", currency);
+		});
+		it('should return currency for negative float number with more than two decimal places', function(){
+			var number = -123.456789;
+			var currency = format.currency(number, "R$");
+			assert.equal("-R$ 123,45", currency);
+		});
 		it('should return currency for hundred', function(){
 			var number = 100.50;
 			var currency = format.currency(number, "R$");
@@ -41,6 +51,11 @@ define(['format'], function(format) {
 			var number = "10.20";
 			var currency = format.currency(number, "R$");
 			assert.equal("R$ 10,20", currency);
+		});
+		it('should return currency for negative value', function(){
+			var number = "-1.000,20";
+			var currency = format.currency(number, "R$");
+			assert.equal("-R$ 1.000,20", currency);
 		});
 		it('should return currency even for wrong formatted strings', function(){
 			var number = "1.000.20";
