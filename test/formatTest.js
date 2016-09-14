@@ -67,5 +67,9 @@ define(['format'], function(format) {
 			var currency = format.currency(number, "R$");
 			assert.equal("", currency);
 		});
+		it('should return empty if the value is empty', function() {
+			var currency = format.currency('', '');
+			assert.equal("", currency);
+		});
 	});
 });

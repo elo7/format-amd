@@ -13,7 +13,7 @@ define('format', [], function() {
 	return {
 		'currency' : function(floatValue, prefix) {
 			var normalized = isNaN(floatValue)? parseFloat(floatValue.toString().replace(/[^\d\.,-]/g, '').replace(/,/g, '.').replace(/\.(\d{3})/g, '$1')) : floatValue;
-			if(!isNaN(normalized)) {
+			if(normalized && !isNaN(normalized)) {
 				var numberParts = normalized.toString().replace('-', '').split('.'),
 					integer = numberParts[0],
 					decimal = ',' + numberParts[1] + '0',
