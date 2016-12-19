@@ -1,12 +1,11 @@
 {
-  "name": "format-amd",
-  "version": "v1.0.6-SNAPSHOT",
+  "name": "elo7-format-amd",
+  "version": "v1.1.4",
   "description": "A small lib to format string to number and vice versa",
   "main": "format.js",
   "scripts": {
     "build": "npm install",
-    "test": "mocha test --recursive --reporter nyan",
-    "postinstall": "bower install"
+    "test": "mocha test --recursive --reporter nyan"
   },
   "keywords": [
     "JS",
@@ -25,6 +24,7 @@
   "homepage": "https://github.com/elo7/format-amd",
   "devDependencies": {
     "bower": "1.3.12",
+    "define-async": "1.1.0",
     "mocha": "2.0.1"
   }
 }

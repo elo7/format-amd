@@ -2,7 +2,7 @@ var fs = require('fs');
 var vm = require('vm');
 var assert = require("assert");
 
-vm.runInThisContext(fs.readFileSync('bower_components/async-define/async-define.js'));
+vm.runInThisContext(fs.readFileSync('node_modules/define-async/async-define.js'));
 vm.runInThisContext(fs.readFileSync('format.js'));
 
 define(['format'], function(format) {

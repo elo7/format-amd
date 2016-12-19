@@ -10,11 +10,11 @@ Format.js is a library that converts string to number or the opposite. This libr
 
 ## Install
 
-Install with [Bower](http://bower.io): `bower install format-amd`
+Install : `npm install format-amd`
 
 ## Dependency
 
-Format-amd depends on an [amd](http://en.wikipedia.org/wiki/Asynchronous_module_definition) implementation. We suggest [async-define](https://gist.github.com/sergiolopes/5778124) implementation for dependency lookup.
+Format-amd depends on an [amd](http://en.wikipedia.org/wiki/Asynchronous_module_definition) implementation. We suggest [define-async](https://www.npmjs.com/package/define-async) implementation for dependency lookup.
 
 ## Example
 
