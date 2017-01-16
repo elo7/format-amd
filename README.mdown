@@ -10,7 +10,7 @@ Format.js is a library that converts string to number or the opposite. This libr
 
 ## Install
 
-Install : `npm install format-amd`
+Install : `npm install elo7-format-amd`
 
 ## Dependency
 

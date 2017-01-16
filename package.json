@@ -1,6 +1,7 @@
 {
   "name": "elo7-format-amd",
-  "version": "v1.1.4",
+  "version": "v1.1.5",
+  "license": "BSD-3-Clause",
   "description": "A small lib to format string to number and vice versa",
   "main": "format.js",
   "scripts": {
@@ -17,14 +18,13 @@
     "url": "git://github.com/elo7/format-amd"
   },
   "author": "Elo7",
-  "license": "BSD",
   "bugs": {
     "url": "https://github.com/elo7/format-amd/issues"
   },
   "homepage": "https://github.com/elo7/format-amd",
   "devDependencies": {
     "bower": "1.3.12",
-    "define-async": "1.1.0",
+    "define-async": "1.1.1",
     "mocha": "2.0.1"
   }
 }
