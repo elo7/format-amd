@@ -23,8 +23,7 @@
   },
   "homepage": "https://github.com/elo7/format-amd",
   "devDependencies": {
-    "bower": "1.3.12",
-    "define-async": "1.1.1",
-    "mocha": "2.0.1"
+    "define-async": "1.3.2",
+    "mocha": "7.1.0"
   }
 }
