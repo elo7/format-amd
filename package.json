@@ -5,7 +5,9 @@
   "description": "A small lib to format string to number and vice versa",
   "main": "format.js",
   "scripts": {
-    "build": "npm install",
+    "lint": "eslint format.js test/formatTest.js",
+    "build": "terser format.js -o format.min.js --compress drop_console=true --mangle",
+    "pretest": "npm run lint && npm run build",
     "test": "mocha test --recursive --reporter nyan"
   },
   "keywords": [
@@ -24,6 +26,8 @@
   "homepage": "https://github.com/elo7/format-amd",
   "devDependencies": {
     "define-async": "1.3.2",
-    "mocha": "7.1.1"
+    "eslint": "6.8.0",
+    "mocha": "7.1.1",
+    "terser": "4.6.6"
   }
 }
