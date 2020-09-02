@@ -26,7 +26,7 @@
   "homepage": "https://github.com/elo7/format-amd",
   "devDependencies": {
     "define-async": "1.3.2",
-    "eslint": "7.0.0",
+    "eslint": "7.8.1",
     "mocha": "7.1.2",
     "terser": "4.6.13"
   }
